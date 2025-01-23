@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* estilos de navbar */
+header {
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 70px;
+  align-items: center;
+}
+header img {
+  /* unidad relativa, se adapta a la resolucion */
+  width: 10%;
+  /* unidad absoluta, queda fija
+    width: 100px;
+    */
+}
+
+header nav ul {
+  display: flex;
+  color: whitesmoke;
+  list-style: none;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+header nav ul li a {
+  color: whitesmoke;
+}
+
+/* estilos de main inicio */
+
+main.inicio {
+  background-color: grey;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.enunciado {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  text-align: center;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-producto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.imagen-producto:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #555;
+}
+
+.enunciado {
+  background-color: grey;
+  text-align: center;
+  border: 3px lightblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* estilos de main nosotros */
+main.nosotros {
+  display: flex;
+  background-color: grey;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+main div.textos-nosotros {
+  text-align: center;
+  color: black;
+  padding-left: 40px;
+}
+main div.imagen-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  main.nosotros {
+    flex-direction: column;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.textos-nosotros {
+    text-align: center;
+    color: black;
+  }
+  main div.imagen-nosotros {
+    justify-content: center;
+    max-width: 200px;
+  }
+}
+@media (max-width: 1199px) {
+  main.nosotros {
+    flex-direction: column;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.textos-nosotros {
+    text-align: center;
+    color: black;
+  }
+  main div.imagen-nosotros {
+    justify-content: center;
+    max-width: 200px;
+  }
+}
+
+/* estilos de section inicio */
+section {
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.gorras img {
+  height: 450px;
+  display: inline-block;
+}
+
+div.camisetas img {
+  height: 450px;
+}
+
+/* estilos de main stock */
+main.stock {
+  display: flex;
+  background-color: grey;
+}
+
+main.stock .categorias {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+main.stock .productos {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: auto auto auto;
+  padding: 15px;
+  width: 75%;
+}
+main.stock div.productos div.img-productos {
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+main.stock div.productos div.img-productos .img {
+  text-align: center;
+  max-width: 300px;
+}
+
+form.categorias {
+  display: flex;
+  flex-direction: column;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* estilos de navbar */
+header {
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 70px;
+  align-items: center;
+}
+header img {
+  /* unidad relativa, se adapta a la resolucion */
+  width: 10%;
+  /* unidad absoluta, queda fija
+      width: 100px;
+      */
+}
+
+header nav ul {
+  display: flex;
+  color: whitesmoke;
+  list-style: none;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+header nav ul li a {
+  color: whitesmoke;
+}
+/* estilos de main stock */
+
+.title {
+  background-color: grey;
+  text-align: center;
+}
+
+main.stock {
+  display: flex;
+  background-color: grey;
+}
+
+main.stock div.categorias {
+  width: 25vh;
+}
+main.stock .productos {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: auto auto auto;
+  padding: 15px;
+  width: 75%;
+  justify-content: center;
+  padding-left: 10rem;
+}
+main.stock div.productos div.img-productos {
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  border: solid black 1px;
+}
+main.stock div.productos div.img-productos .img {
+  text-align: center;
+  max-width: 300px;
+  cursor: pointer;
+}
+main.stock div.productos div.img-productos .img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1199px) {
+  main.stock {
+    background-color: grey;
+    display: block;
+    padding: 20px;
+  }
+
+  main.stock div.categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  main.stock .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  main.stock div.productos div.img-productos {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    border: solid black 1px;
+  }
+
+  main.stock div.productos div.img-productos .img {
+    text-align: center;
+    max-width: 80px;
+    cursor: pointer;
+  }
+
+  main.stock div.productos div.img-productos .img:hover {
+    transform: scale(1.15);
+  }
+}
+@media (max-width: 768px) {
+  main.stock {
+    background-color: grey;
+    display: block;
+    padding: 10px;
+  }
+
+  main.stock div.categorias {
+    display: block; /* Cambiar a bloque para apilar las categorías */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  main.stock .productos {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Cambiar a 1 columna */
+    gap: 15px;
+  }
+
+  main.stock div.productos div.img-productos {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 90%; /* Ajustar el ancho máximo para que se ajuste mejor */
+    border: solid black 1px;
+  }
+
+  main.stock div.productos div.img-productos .img {
+    text-align: center;
+    max-width: 50px; /* Reducir tamaño de la imagen */
+    cursor: pointer;
+  }
+
+  main.stock div.productos div.img-productos .img:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* main politica  */
+h1.politica {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: grey;
+  text-decoration: double;
+}
+
+div.contenedorPolitica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: grey;
+  text-align: center;
+}
+
+li.politica {
+  padding: 1rem;
+}
+
+/* estilos de main contacto */
+.formularioContacto {
+  height: 75vh;
+}
+.formularioContacto form {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* footer de todos */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
