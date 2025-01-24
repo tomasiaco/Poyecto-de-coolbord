@@ -10,19 +10,94 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
   </head>
   <body>
     <header>
-      <img src="./imgprimerproyecto/coolbord logo.PNG" alt="" />
-      <nav>
-        <ul>
-          <li class="nombre">Coolbord</li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="stock.html">stock</a></li>
-          <li><a href="politica.html">Politica</a></li>
-          <li><a href="quienes-somos.html">nosotros</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="img">
+          <img
+            style="max-width: 100px; width: 100%"
+            src="../imgprimerproyecto/coolbord logo.PNG"
+            alt=""
+          />
+        </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: whitesmoke" href="../index.html"
+            >Inicio</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  style="color: whitesmoke"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/stock.html"
+                  >Stock</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="color: whitesmoke"
+                  href="../pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  style="color: whitesmoke"
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu" style="color: whitesmoke">
+                  <li>
+                    <a class="dropdown-item" href="../pages/quienes-somos.html"
+                      >Quienes somos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/politica.html"
+                      >politica</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="inicio">

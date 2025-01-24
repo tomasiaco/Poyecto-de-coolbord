@@ -3,34 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* estilos de navbar */
-header {
-  display: flex;
-  background-color: black;
-  color: whitesmoke;
-  text-align: center;
-  justify-content: space-between;
-  padding-right: 70px;
-  align-items: center;
-}
-header img {
-  /* unidad relativa, se adapta a la resolucion */
-  width: 10%;
-  /* unidad absoluta, queda fija
-    width: 100px;
-    */
-}
 
-header nav ul {
-  display: flex;
-  color: whitesmoke;
-  list-style: none;
-  gap: 40px;
-  text-align: center;
-  align-items: center;
-}
-header nav ul li a {
-  color: whitesmoke;
+body {
+  background-color: grey;
 }
 
 /* estilos de main inicio */
