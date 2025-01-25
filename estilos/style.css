@@ -8,6 +8,9 @@ body {
   background-color: grey;
 }
 
+main {
+  background-color: grey;
+}
 /* estilos de main inicio */
 
 main.inicio {
@@ -69,7 +72,27 @@ h2 {
   padding-left: 3px;
   padding-right: 3px;
 }
+/* estilos de section inicio */
+section {
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+div.gorras img {
+  height: 450px;
+  display: inline-block;
+}
+
+div.camisetas img {
+  height: 450px;
+}
 /* estilos de main nosotros */
 main.nosotros {
   display: flex;
@@ -124,28 +147,6 @@ main div.imagen-nosotros {
   }
 }
 
-/* estilos de section inicio */
-section {
-  background-color: grey;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-section div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-div.gorras img {
-  height: 450px;
-  display: inline-block;
-}
-
-div.camisetas img {
-  height: 450px;
-}
-
 /* estilos de main stock */
 main.stock {
   display: flex;
@@ -181,28 +182,6 @@ main.stock div.productos div.img-productos .img {
 form.categorias {
   display: flex;
   flex-direction: column;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-/* estilos de navbar */
-header {
-  display: flex;
-  background-color: black;
-  color: whitesmoke;
-  text-align: center;
-  justify-content: space-between;
-  padding-right: 70px;
-  align-items: center;
-}
-header img {
-  /* unidad relativa, se adapta a la resolucion */
-  width: 10%;
-  /* unidad absoluta, queda fija
-      width: 100px;
-      */
 }
 
 header nav ul {
