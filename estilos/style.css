@@ -7,7 +7,9 @@
 body {
   background-color: grey;
 }
-
+body.stock {
+  background-color: grey;
+}
 main {
   background-color: grey;
 }
@@ -122,7 +124,6 @@ main div.imagen-nosotros {
   main div.textos-nosotros {
     text-align: center;
     color: black;
-    padding-left: 0px;
   }
   main div.imagen-nosotros {
     justify-content: center;
