@@ -130,6 +130,9 @@ main div.imagen-nosotros {
     justify-content: center;
     max-width: 200px;
   }
+  main div.imagen-nosotros img {
+    max-width: 300px;
+  }
 }
 @media (max-width: 1199px) {
   main.nosotros {
@@ -146,6 +149,9 @@ main div.imagen-nosotros {
   main div.imagen-nosotros {
     justify-content: center;
     max-width: 200px;
+  }
+  main div.imagen-nosotros img {
+    max-width: 400px;
   }
 }
 
