@@ -125,6 +125,7 @@ main div.imagen-nosotros {
   main div.textos-nosotros {
     text-align: center;
     color: black;
+    padding-right: 15px;
   }
   main div.imagen-nosotros {
     justify-content: center;
@@ -145,6 +146,7 @@ main div.imagen-nosotros {
   main div.textos-nosotros {
     text-align: center;
     color: black;
+    padding-right: 15px;
   }
   main div.imagen-nosotros {
     justify-content: center;
@@ -215,6 +217,9 @@ main.stock {
   display: flex;
   background-color: grey;
 }
+form.talle {
+  padding-left: 10px;
+}
 
 main.stock div.categorias {
   width: 25vh;
@@ -237,6 +242,7 @@ main.stock div.productos div.img-productos {
   max-width: 320px;
   border: solid black 1px;
 }
+
 main.stock div.productos div.img-productos .img {
   text-align: center;
   max-width: 300px;
@@ -298,6 +304,9 @@ main.stock div.productos div.img-productos .img:hover {
     background-color: grey;
     display: block;
     padding-left: 28px;
+  }
+  input {
+    width: 20px;
   }
 
   main.stock div.categorias {
