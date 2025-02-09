@@ -1,0 +1,18 @@
+
+*main{background-color: gray;}
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: "Arial", sans-serif;
+    h2{  margin: 0 0 10px;
+        font-size: 24px;}
+    p{
+        margin: 0;
+        font-size: 16px;
+    }
+    a{color: #ffa500;
+        text-decoration: none;}
+    a:hover{  text-decoration: underline;}
+}

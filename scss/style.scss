@@ -1,0 +1,19 @@
+//variables del proyecto//
+//color del body//
+$color-body: grey;
+
+//import de reset//
+@use "paginas-scss/reset";
+/*import de home*/
+@use "paginas-scss/home";
+/*import de nosotros*/
+@use "paginas-scss/nosotros";
+/*import de stock*/
+@use "paginas-scss/stock";
+/*import de politica*/
+@use "paginas-scss/politica";
+/*import de contacto*/
+@use "paginas-scss/contacto";
+/*cosas en general*/
+@use "paginas-scss/general";
+

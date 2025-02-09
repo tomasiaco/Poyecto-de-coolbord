@@ -1,0 +1,58 @@
+.politica {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+    text-decoration: double;
+  }
+  
+  .contenedorPolitica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    text-align: center;
+  
+    li {
+      padding: 1rem;
+    }
+  }
+  
+  // Media query para pantallas menores a 768px (tablets y móviles)
+  @media (max-width: 768px) {
+    .politica {
+      font-size: 1.2rem;
+      background-color: gray;
+    }
+  
+    .contenedorPolitica {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 10px;
+  
+      li {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  // Media query para pantallas menores a 480px (móviles pequeños)
+  @media (max-width: 480px) {
+    .politica {
+      font-size: 1rem;
+      flex-direction: column;
+    }
+  
+    .contenedorPolitica {
+      text-align: left;
+      padding: 5px;
+  
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  

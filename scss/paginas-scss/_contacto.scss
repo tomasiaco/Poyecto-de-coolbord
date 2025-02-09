@@ -1,0 +1,82 @@
+/* Estilos de main contacto */
+.contenedorContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    padding: 20px;
+    height: 900px;
+  
+    .textoContacto {
+      width: 50%;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+  
+    .formularioContacto {
+      width: 50%;
+      height: auto;
+  
+      form {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  // Media query para tablets (máx. 1024px)
+  @media (max-width: 1024px) {
+    .contenedorContacto {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .textoContacto,
+    .formularioContacto {
+      width: 80%;
+    }
+  }
+  
+  // Media query para móviles (máx. 768px)
+  @media (max-width: 768px) {
+    .contenedorContacto {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .textoContacto,
+    .formularioContacto {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .formularioContacto form {
+      padding: 15px;
+    }
+  }
+  
