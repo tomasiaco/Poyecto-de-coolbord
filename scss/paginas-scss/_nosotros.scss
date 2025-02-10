@@ -1,6 +1,10 @@
+$bg-color: gray;
+$white-color: whitesmoke;
+
+/*estilos de main nosotros*/
 main.nosotros{
     display: flex;
-  background-color: grey;
+  background-color: $bg-color;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -18,7 +22,7 @@ main.nosotros{
 @media (max-width: 768px) {
     main.nosotros {
         flex-direction: column;
-        background-color: grey;
+        background-color: $bg-color;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -39,7 +43,7 @@ main.nosotros{
 @media (max-width: 1199px) {  
     main.nosotros {
     flex-direction: column;
-    background-color: grey;
+    background-color: $bg-color;
     text-align: center;
     justify-content: center;
     align-items: center;

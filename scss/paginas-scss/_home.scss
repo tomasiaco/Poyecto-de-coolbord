@@ -1,5 +1,9 @@
+$bg-color: gray;
+$white-color: whitesmoke;
+
+/*estilos de main inicio*/
 main.inicio {
-    background-color: grey;
+    background-color: $bg-color;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -25,7 +29,7 @@ main.inicio {
   .producto {
     text-align: center;
     max-width: 300px;
-    background-color: #f9f9f9;
+    background-color: $white-color;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -49,7 +53,7 @@ main.inicio {
   }
   
   .enunciado {
-    background-color: grey;
+    background-color: $bg-color;
     text-align: center;
     border: 3px lightblue;
     padding-top: 40px;
@@ -57,7 +61,7 @@ main.inicio {
     padding-left: 3px;
     padding-right: 3px;
   }
-  section{  background-color: grey;
+  section{  background-color: $bg-color;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -75,4 +79,59 @@ div{
 }} 
   }
 
-  
+  /* Estilos responsivos */
+
+/* Tablets (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    max-width: 80%;
+  }
+
+  .gorras img, .camisetas img {
+    height: 300px;
+  }
+}
+
+/* Celulares (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .producto {
+    max-width: 90%;
+  }
+
+  .enunciado {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .gorras img, .camisetas img {
+    height: 250px;
+  }
+}
+
+/* Celulares pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+  .producto {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .enunciado {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .gorras img, .camisetas img {
+    height: 200px;
+  }
+}
