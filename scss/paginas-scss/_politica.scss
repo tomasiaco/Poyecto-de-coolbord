@@ -1,10 +1,15 @@
 $bg-color: gray;
 $white-color: whitesmoke;
 
+@mixin flex ($flex, $direction){
+  display: $flex;
+  flex-direction: $direction;
+}
+
+
 /*main de politica*/
 .politica {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex,column );
     text-align: center;
     justify-content: center;
     background-color: $bg-color;
@@ -12,8 +17,7 @@ $white-color: whitesmoke;
   }
   
   .contenedorPolitica {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex,column );
     justify-content: center;
     background-color: $bg-color;
     text-align: center;
@@ -31,7 +35,7 @@ $white-color: whitesmoke;
     }
   
     .contenedorPolitica {
-      flex-direction: column;
+      @include flex(flex,column );
       flex-wrap: wrap;
       padding: 10px;
   
@@ -46,7 +50,7 @@ $white-color: whitesmoke;
   @media (max-width: 480px) {
     .politica {
       font-size: 1rem;
-      flex-direction: column;
+      @include flex(flex,column );
     }
   
     .contenedorPolitica {

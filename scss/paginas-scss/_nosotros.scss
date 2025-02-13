@@ -1,13 +1,21 @@
 $bg-color: gray;
 $white-color: whitesmoke;
 
+@mixin centrar { 
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+}
+@mixin flex ($flex, $direction){
+  display: $flex;
+  flex-direction: $direction;
+}
+
 /*estilos de main nosotros*/
 main.nosotros{
-    display: flex;
+    @include flex(flex,row );
   background-color: $bg-color;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+ @include centrar;
   padding-left: 2rem;
   div {.textos-nosotros{
     text-align: center;
@@ -21,11 +29,11 @@ main.nosotros{
 
 @media (max-width: 768px) {
     main.nosotros {
+      padding: 8px;
         flex-direction: column;
         background-color: $bg-color;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        @include centrar;
+        img {width: 200px;}
     div  { .textos-nosotros{
          text-align: center;
         color: black;
@@ -34,7 +42,7 @@ main.nosotros{
             justify-content: center;
             max-width: 200px;}
             .imagen-nosotros img {
-                max-width: 200px;
+                width: 200px;
               }
     }
     
@@ -42,11 +50,13 @@ main.nosotros{
 }
 @media (max-width: 1199px) {  
     main.nosotros {
+      padding: 8px;
     flex-direction: column;
     background-color: $bg-color;
     text-align: center;
     justify-content: center;
     align-items: center;
+    img {width: 400px;}
     div{
         .textos-nosotros {
             text-align: center;

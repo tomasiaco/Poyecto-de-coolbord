@@ -1,8 +1,15 @@
 /* Estilos de main contacto */
 $bg-color: gray;
 $white-color: whitesmoke;
+
+@mixin flex ($flex, $direction){
+  display: $flex;
+  flex-direction: $direction;
+}
+
+
 .contenedorContacto {
-    display: flex;
+    @include flex(flex,row );
     align-items: center;
     justify-content: center;
     background-color: $bg-color;
@@ -22,8 +29,7 @@ $white-color: whitesmoke;
   
       form {
         padding: 2rem;
-        display: flex;
-        flex-direction: column;
+        @include flex(flex,column );
         text-align: center;
         justify-content: center;
         background: $white-color;

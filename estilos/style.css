@@ -129,6 +129,7 @@ main.inicio section div .camisetas img {
 /*estilos de main nosotros*/
 main.nosotros {
   display: flex;
+  flex-direction: row;
   background-color: gray;
   text-align: center;
   justify-content: center;
@@ -146,11 +147,15 @@ main.nosotros div .imagen-nosotros {
 
 @media (max-width: 768px) {
   main.nosotros {
+    padding: 8px;
     flex-direction: column;
     background-color: gray;
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  main.nosotros img {
+    width: 200px;
   }
   main.nosotros div .textos-nosotros {
     text-align: center;
@@ -162,16 +167,20 @@ main.nosotros div .imagen-nosotros {
     max-width: 200px;
   }
   main.nosotros div .imagen-nosotros img {
-    max-width: 200px;
+    width: 200px;
   }
 }
 @media (max-width: 1199px) {
   main.nosotros {
+    padding: 8px;
     flex-direction: column;
     background-color: gray;
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  main.nosotros img {
+    width: 400px;
   }
   main.nosotros div .textos-nosotros {
     text-align: center;
@@ -348,6 +357,7 @@ form.categorias {
     background-color: gray;
   }
   .contenedorPolitica {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
@@ -360,6 +370,7 @@ form.categorias {
 @media (max-width: 480px) {
   .politica {
     font-size: 1rem;
+    display: flex;
     flex-direction: column;
   }
   .contenedorPolitica {
@@ -374,6 +385,7 @@ form.categorias {
 /* Estilos de main contacto */
 .contenedorContacto {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: gray;

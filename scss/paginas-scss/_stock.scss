@@ -1,5 +1,10 @@
 $bg-color: gray;
 $white-color: whitesmoke;
+@mixin flex ($flex, $direction){
+  display: $flex;
+  flex-direction: $direction;
+}
+
 
 /* Estilos de main stock */
 body.stock{background-color: $bg-color;}
@@ -13,8 +18,7 @@ main.stock {
 
 
     .categorias {
-      display: flex;
-      flex-direction: column;
+      @include flex(flex, column) ;
       width: 25%;
     }
   
@@ -54,8 +58,7 @@ main.stock {
   
   /* Formulario de categorías */
   form.categorias {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex,column );
   }
   
   /*media stock*/
