@@ -66,13 +66,13 @@ main.stock {
     main.stock {
         background-color: $bg-color;
         display: block;
-        padding-left: 28px;
     }
 
     .categorias {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        
     }
 
     .productos {

@@ -257,7 +257,6 @@ form.categorias {
   main.stock {
     background-color: gray;
     display: block;
-    padding-left: 28px;
   }
   .categorias {
     display: grid;
