@@ -53,9 +53,7 @@ main.nosotros{
       padding: 8px;
     flex-direction: column;
     background-color: $bg-color;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    @include centrar;
     img {width: 400px;}
     div{
         .textos-nosotros {
