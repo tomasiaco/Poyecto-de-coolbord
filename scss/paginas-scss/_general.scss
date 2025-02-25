@@ -1,4 +1,18 @@
-
+header{
+    img{max-width: 100px;
+    width: 100%;}
+    .navbar-brand{color: whitesmoke;}
+    .navbar-toggler-icon{background-color: whitesmoke;}
+    .nav-link {
+        &.active {
+          color: whitesmoke !important;
+        }
+      }
+      
+    .nav-link{color: whitesmoke;}
+    .nav-link.dropdown-toggle{color: whitesmoke;}
+    .dropdown-menu{color: whitesmoke;}
+}
 
 *main{background-color: gray;}
 .footer{

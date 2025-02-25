@@ -58,90 +58,115 @@ main.stock {
   
   /* Formulario de categorías */
   form.categorias {
-    @include flex(flex,column );
+    @include flex(flex, column);
   }
   
-  /*media stock*/
-@media (max-width: 1199px)   {
+  /* Media Queries para responsividad */
+  @media (max-width: 1199px) {
     main.stock {
-        background-color: $bg-color;
-        display: block;
+      background-color: $bg-color;
+      display: block;
     }
-
+  .talle{display: flex;}
+.categoria{display: flex;}
     .categorias {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
-
+  
     .productos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 15px;
     }
-
+  
     .productos .img-productos {
-        text-align: center;
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        max-width: 220px;
-        border: solid black 1px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 220px;
+      border: solid black 1px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
+  
     .productos .img-productos:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
-
+  
     .productos .img-productos .img {
-        text-align: center;
-        width: 100%;
-        max-width: 150px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-
-    .productos .img-productos .img:hover {
-        transform: scale(1.15);
-    }
-}
-
-@media (max-width: 768px) {
-  main.stock {
-    background-color: $bg-color;
-    display: block;
-    padding-left: 28px;
-    .categorias {
-      display: block; /* Cambiar a bloque para apilar las categorías */
+      text-align: center;
       width: 100%;
-      margin-bottom: 20px;}
-      .productos {
-        display: grid;
-        grid-template-columns: auto auto auto; /* Cambiar a 1 columna */
-        gap: 15px;
-        padding: 5px;
-      }
-      .productos .img-productos{    text-align: center;
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        padding: 10px;
-        max-width: 90%; /* Ajustar el ancho máximo para que se ajuste mejor */
-        border: solid black 1px;}
-        .productos .img-productos .img{
-          text-align: center;
-          max-width: 50px; /* Reducir tamaño de la imagen */
-          cursor: pointer;
-        }
-        .productos .img-productos:hover {
-          transform: scale(1.1);
-      }
+      max-width: 150px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+  
+    .productos .img-productos .img:hover {
+      transform: scale(1.15);
+    }
   }
-}
-
-
-
+  
+  @media (max-width: 768px) {
+    main.stock {
+      background-color: $bg-color;
+      display: block;
+      padding-left: 28px;
+    }
+    .talle{display: flex;}
+    .categoria{display: flex;}
+    .categorias {
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 5px;
+      justify-items: center;
+    }
+  
+    .productos .img-productos {
+      text-align: center;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 90%;
+      border: solid black 1px;
+    }
+  
+    .productos .img-productos .img {
+      text-align: center;
+      max-width: 50px;
+      cursor: pointer;
+    }
+  
+    .productos .img-productos:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .talle{display: flex;}
+.categoria{display: flex;}
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      padding: 5px;
+    }
+  
+    .productos .img-productos .img {
+      max-width: 80px;
+    }
+  }
