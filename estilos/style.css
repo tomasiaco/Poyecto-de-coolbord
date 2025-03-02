@@ -371,8 +371,11 @@ form.categorias {
   background-color: gray;
   text-decoration: double;
 }
-.politica p .titulo {
-  color: black solid;
+.politica .titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #333;
 }
 
 .contenedorPolitica {
