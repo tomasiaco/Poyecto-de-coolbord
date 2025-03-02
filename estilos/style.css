@@ -46,7 +46,7 @@ main.inicio .imagen-producto {
 main.inicio .imagen-producto:hover {
   transform: scale(1.05);
 }
-main.inicio h2 a {
+main.inicio p a {
   margin-top: 10px;
   font-size: 20px;
   color: #555;
@@ -370,6 +370,9 @@ form.categorias {
   justify-content: center;
   background-color: gray;
   text-decoration: double;
+}
+.politica p .titulo {
+  color: black solid;
 }
 
 .contenedorPolitica {
